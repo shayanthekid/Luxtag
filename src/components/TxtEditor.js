@@ -104,7 +104,7 @@ let html = stateToHTML(contentState, options);
                   keyBindingFn={this.mapKeyToEditorCommand}
                   onChange={ this.onChange}
                   onToggle={this.props.setHtml(html)}
-                  placeholder="Tell a story..."
+                  placeholder="Start typing...."
                   ref="editor"
                   spellCheck={true}
                 />

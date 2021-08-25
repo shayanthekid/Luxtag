@@ -12,8 +12,14 @@ const [html,setHtml] = useState();
  
   return (
     <div className="App">
-      <TxtEditor setHtml={setHtml} />
-      <Mockup html={html}/>
+      <div className="editor">
+        <div className="head">
+          <h1>Customisation</h1>
+          <span>The text will reflet mobile view</span>
+        </div>
+        <TxtEditor setHtml={setHtml} />
+      </div>
+      <Mockup html={html} />
     </div>
   );
 }

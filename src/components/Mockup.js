@@ -10,8 +10,8 @@ function Mockup({ html }) {
   };
 
   return (
-    <div className="">
-      <button onClick={handleClick}>Render</button>
+    <div className="btn">
+      <button className onClick={handleClick}>Render</button>
       <div className="mockup">
         <img className="iphone" src={iphone} alt="" />
 

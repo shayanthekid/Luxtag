@@ -75,10 +75,15 @@ import '../../node_modules/draft-js/dist/Draft.css'
               className += ' RichEditor-hidePlaceholder';
             }
           }
-    let html = stateToHTML(contentState);
+  
+let options = {
+  inlineStyles: {
 
-
-
+      attributes: { class: "content" },
+    
+  },
+};
+let html = stateToHTML(contentState, options);
 
           return (
             <div className="RichEditor-root">

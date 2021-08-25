@@ -100,3 +100,19 @@ border-radius: 3%;
 .iphone, .content{
   grid-row: 1/2;
 }
+
+@media screen and (max-width:769px) {
+ .editor{
+   grid-column: 2;
+ }
+
+ .iphone{
+ left: 0;
+ grid-column: 1;
+
+}
+
+button{
+  display: none;
+}
+}

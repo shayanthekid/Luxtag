@@ -13,7 +13,6 @@ const [html,setHtml] = useState();
   return (
     <div className="App">
       <TxtEditor setHtml={setHtml} />
-    
       <Mockup html={html}/>
     </div>
   );

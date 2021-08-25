@@ -10,8 +10,8 @@
  display: grid;
  grid-template-columns: repeat(2,1fr);
  width: 100%;
- max-width:1920px;
- max-height: 1080px;
+ max-width:768px;
+ max-height: 1024px;
  margin: 0 auto;
 
 }
@@ -36,7 +36,7 @@ width: 40%;
 max-width: 100%;
 height: 64%;
 margin-top: 40px;
-margin-left: 214px;
+margin-left: 230px;
 border-radius: 3%;
 }
 

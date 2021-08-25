@@ -12,8 +12,8 @@ const [html,setHtml] = useState();
   return (
     <div className="App">
       <TxtEditor setHtml={setHtml}  />
-   
-   <div dangerouslySetInnerHTML={{__html: html}} />
+      <Button html={html} />
+ 
     </div>
   );
 }

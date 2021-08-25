@@ -98,12 +98,12 @@ import '../../node_modules/draft-js/dist/Draft.css'
                   handleKeyCommand={this.handleKeyCommand}
                   keyBindingFn={this.mapKeyToEditorCommand}
                   onChange={ this.onChange}
-     
+                  onToggle={this.props.setHtml(html)}
                   placeholder="Tell a story..."
                   ref="editor"
                   spellCheck={true}
                 />
-              <button     onClick={()=>this.props.setHtml(html)}> render</button>
+         
              
               </div>
             </div>

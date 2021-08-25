@@ -1,23 +1,25 @@
+import "./App.css";
+import TxtEditor from "./components/TxtEditor";
+import React, { useState } from "react";
 
-import './App.css';
-import TxtEditor from './components/TxtEditor';
-import React, { useState } from 'react';
-import Button from './components/Button';
-import Mockup from './components/Mockup';
-import useMediaQuery from './useMediaQuery';
+import Mockup from "./components/Mockup";
+import useMediaQuery from "./useMediaQuery";
 function App() {
-const [html,setHtml] = useState();
-const matches = useMediaQuery("(max-width:769px)");
+  //setting state for html
+  const [html, setHtml] = useState();
+  //variable for the media query
+  const matches = useMediaQuery("(max-width:769px)");
 
- 
   return (
     <div className="App">
+      {/* Will show the editor if max-width exeeds given amount else show only mockup */}
       {matches ? null : (
         <div className="editor">
           <div className="head">
             <h1>Customisation</h1>
             <span>The text will reflet mobile view</span>
           </div>
+          {/* setHtml called to set prop with value */}
           <TxtEditor setHtml={setHtml} />
         </div>
       )}
